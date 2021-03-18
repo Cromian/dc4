@@ -1,0 +1,21 @@
+.two-col {
+  display: grid;
+  align-items: center;
+  grid-gap: 5%;
+  // grid-template-columns: 1fr 1fr ;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  @media screen and (max-width: 500px){
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+.three-col {
+  display: grid;
+  width: 100%;
+  grid-gap: 5%;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  @media screen and (max-width: 500px){
+    grid-template-columns: 1fr; 
+  }
+}

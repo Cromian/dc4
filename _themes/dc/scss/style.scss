@@ -1,0 +1,382 @@
+// General Vars
+$max-width: 1300px;
+$bp-small: 600px;
+
+@import "text";
+@import "grid";
+
+// Colors
+$btn: #FFAF73;
+$btn-accent: #F76C05;
+$bg: #EDF6F6;
+$bg_accent: #99CBCB;
+$body_accent: #404141;
+
+// Mixins
+@mixin image_block($url) {
+  display: block;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+@mixin heading-font {
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+}
+
+@mixin accent-font {
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin body-font {
+  font-family: 'Source Sans Pro', sans-serif;
+  // font-family: 'Lora', serif;
+  font-weight: 400;
+}
+
+// Main
+html {
+  @include body-font();
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $body_accent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include heading-font();
+  color: black;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: #F70509;
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: $max-width;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+footer,
+section {
+  padding: 2rem;
+  @media screen and (max-width: $bp-small){
+    padding-left: unset;
+    padding-right: unset;
+  }
+  // padding-bottom: 3rem;
+}
+
+.alt-section {
+  background-color: $bg;
+  border-top: 1px solid $bg_accent;
+  border-bottom: 1px solid $bg_accent;
+}
+
+.subtitle {
+  @include accent-font();
+  display: block;
+  line-height: 1.5;
+}
+
+.logo {
+  @include image_block('../img/logo.png');
+  width: 325px;
+  height: 110px;
+}
+
+.nav-well {
+  @include heading-font();
+  display: grid;
+  grid-template-columns: minmax(200px, auto) 1fr;
+  align-items: center;
+  grid-gap: 1rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    
+    li {
+      display: inline;
+      margin-right: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+
+  @media screen and (max-width: $bp-small) {
+    #menu-well {
+      display: none;
+    }
+  }
+}
+
+
+header {
+  background-color: $bg;
+
+  .container {
+    border-bottom: 1px solid $bg_accent;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+.subheader {
+  @extend .alt-section;
+  border-top: hidden;
+}
+
+.intro-banner {
+  background-image: url('../img/comp.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: 50%;
+  overflow: hidden;
+  // height: 55vh;
+  display: grid;
+  align-items: center;
+
+  .lb {
+    @media screen and (min-width: $bp-small) {
+      display: block;
+    }  
+  }
+ 
+  .subtitle {
+    line-height: 1;
+  }
+
+  .banner-text {
+    width: 60%;
+    @media screen and (max-width: $bp-small) {
+      width: unset;
+      margin: auto;
+    }
+  }
+}
+
+.banner-text {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  .button {
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+}
+
+// Doodles
+.doodle-lightbulb {
+  @include image_block('../img/light-off.png');
+  background-size: 90%;
+  width: 13rem;
+  height: 13rem;
+  margin-top: -2rem;
+  float: right;
+
+  @media screen and (max-width: $bp-small) {
+    display: none;
+  }
+
+  &:hover {
+    background-image: url('../img/light-on.png');
+  }
+}
+
+.doodle-scribble {
+  @include image_block('../img/scribble-white.svg');
+  margin: auto;
+  width: 250px;
+  height: 80px;
+  margin-bottom: 2rem;
+}
+
+.doodle-office {
+  @include image_block('../img/office.png');
+  width: 100%;
+  height: 35rem;
+  margin: auto;
+  @media screen and (max-width: 960px){
+    background-size: 70%;
+  }
+
+  @media screen and (max-width: 770px){
+    background-size: 90%;
+  }
+
+  @media screen and (max-width: $bp-small){
+    background-size: 88%;
+    height: 45vh;
+  }
+}
+
+.doodle-me {
+  @include image_block('../img/me.png');
+  width: 90%;
+  height: 30rem;
+  margin: auto;
+
+  @media screen and (max-width: $bp-small){
+    height: 40vh;
+    margin-bottom: 2rem;
+  }
+ 
+}
+
+// Sections
+#about, footer {
+  background-image: url('../img/paint-line.svg');
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-y: 8%;
+  background-position-x: -10%;
+}
+
+#about {
+  padding-bottom: 5rem
+}
+
+#services {
+  background-image: url('../img/tech-line-white.svg');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-y: 10%;
+}
+
+#testimonials {
+  background-image: url('../img/sunday.svg');
+  background-repeat: no-repeat;
+  background-position-y: 170px;
+  background-position-x: center;
+  background-size: 320px;
+  min-height: 550px;
+  @media screen and (max-width: 1200px) {
+    background-position-x: 90%;
+    padding-bottom: 5rem;
+  }
+  @media screen and (max-width: 800px) {
+    background-position-x: center;
+    padding-bottom: 50vh;
+    background-position-y: 80vh;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    background-position-y: 110vh;
+  }
+}
+
+// Misc
+.button {
+  @include heading-font();
+  background-color: $btn;
+  padding: .7rem 2rem;
+  border: 1px solid $btn-accent;
+  color: $body_accent;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: $btn-accent;
+    color: white;
+  }
+
+}
+
+.arrow-text {
+  font-size: 2rem;
+  @include accent-font;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 200px;
+  background-image: url('../img/arrow-line.svg');
+  background-repeat: no-repeat;
+  background-size: 32%;
+  background-position: center center;
+  padding-top: 7.6rem;
+  padding-bottom: 6.3rem;
+
+  span {
+    background-color: white;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+  }
+
+  .alt {
+    background-color: $bg;
+  }
+
+  margin-top: -6.5rem;
+  margin-bottom: 1rem;
+}
+
+.happy-quote {
+
+  p {
+    margin: 0;
+    margin-top: .5rem;
+    font-size: 90%;
+  }
+
+
+  .credit {
+    // text-align: right;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+  }
+
+  strong {
+    @extend h5;
+    // font-weight: 900;
+  }
+}
+
+.cc {
+  font-size: medium;
+}
+
+.msg {
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  .banner-text{
+    @media screen and (max-width: 770px) {
+      margin-bottom: unset;
+    }
+  }
+}

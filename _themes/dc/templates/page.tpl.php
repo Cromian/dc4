@@ -6,7 +6,6 @@
   <?php render_themeCSS(); ?>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,400&family=Architects+Daughter&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-
   <?php render_templateMetaHead($page_data); ?>
 </head>
 <body>
@@ -63,7 +62,7 @@
         <div class="doodle-me"></div>
       </div>
     </div>
-    <div class="msg center">Have a fabulous <?php echo date('l'); ?>!</div>
+    <div class="msg center">Have a fabulous <span id="foot-day">day</span>!</div>
     <div class="cc center">
       ©<?php echo date('Y') . ' '?><a href="<?php render_baseUrl(); ?>">Digital Confection, LLC</a>.
     </div>

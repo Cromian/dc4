@@ -2,7 +2,7 @@
   <div class="container">
     <div class="banner-text">
       <h1><span class="subtitle">Creative</span> <span class="lb">High-Quality</span> Web Development.</h1>
-      <p>Digital Confection is a creative web development studio specializing in building simple, elegant, and innovative websites. From exceptional customer services, timely assistance, and creative thinking, we help customers succeed efficiently and effectively.</p>
+      <p>Digital Confection is a creative web development studio specializing in building simple, elegant, high-quality websites. From exceptional customer services, timely assistance, and creative thinking, we help customers succeed efficiently and effectively.</p>
       <a href="mailto:hello@digitalconfection.com?Subject=Hello%20From%20Website" class="button">Lets Connect</a>
     </div>
   </div>
@@ -15,10 +15,10 @@
     <div class="three-col">
       <div>
         <h3><span class="subtitle">Assorted</span> Development.</h3>
-        <p>Our broad offering of technical services allows us to be a one-stop web development shop. From custom WordPress and Drupal websites to Shopify, e-commerce, mobile, and Squarespace, our team can handle just about any web development task.</p>
+        <p>Our broad offering of technical services allows us to be a one-stop shop for web development. From custom WordPress and Drupal websites to Shopify, e-commerce, mobile, and Squarespace, our team can handle just about any web development task.</p>
       </div>
       <div>
-        <h3><span class="subtitle">Innoivative</span> Product Stratagy.</h3>
+        <h3><span class="subtitle">Innovative</span> Product Strategy.</h3>
         <p>Technology is only as good as the strategy behind it. With well over 15 years of multi-disciplinary experience, we are experts in helping customers truly understand what they want and how they can effectively achieve it.</p>
       </div>
       <div>

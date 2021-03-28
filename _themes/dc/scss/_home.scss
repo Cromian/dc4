@@ -1,0 +1,139 @@
+#about {
+  padding-bottom: 5rem
+}
+
+#services {
+  background-image: url('../img/tech-line-white.svg');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-y: 10%;
+}
+
+#testimonials {
+  background-image: url('../img/sunday.svg');
+  background-repeat: no-repeat;
+  background-position-y: 170px;
+  background-position-x: center;
+  background-size: 320px;
+  min-height: 550px;
+  @media screen and (max-width: 1175px) {
+    background-position-x: 90%;
+    padding-bottom: 5rem;
+  }
+  @media screen and (max-width: 800px) {
+    background-position-x: center;
+    padding-bottom: 20rem;
+    background-position-y: 45rem;
+  }
+}
+
+// Misc
+.button {
+  @include heading-font();
+  background-color: $btn;
+  padding: .7rem 2rem;
+  border: 1px solid $btn-accent;
+  color: $body_accent;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: $btn-accent;
+    color: white;
+  }
+
+}
+
+.happy-quote {
+  p {
+    margin: 0;
+    margin-top: .5rem;
+    font-size: 90%;
+  }
+
+
+  .credit {
+    // text-align: right;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+  }
+
+  strong {
+    @extend h5;
+    // font-weight: 900;
+  }
+}
+
+.doodle-office {
+  @include image_block('../img/office.png');
+  width: 100%;
+  height: 35rem;
+  margin: auto;
+  @media screen and (max-width: 960px){
+    background-size: 70%;
+  }
+
+  @media screen and (max-width: 770px){
+    background-size: 90%;
+  }
+
+  @media screen and (max-width: $bp-small){
+    background-size: 88%;
+    height: 45vh;
+  }
+}
+
+.intro-banner {
+  // background-repeat: no-repeat;
+  // background-position-x: 100%;
+  // background-size: 50%;
+  // overflow: hidden;
+  // display: grid;
+  // align-items: center;
+
+
+  .lb {
+    @media screen and (min-width: $bp-small) {
+      display: block;
+    }  
+  }
+ 
+  .subtitle {
+    line-height: 1;
+  }
+
+  .banner-text {
+    width: 60%;
+    @media screen and (max-width: $bp-small) {
+      width: unset;
+      margin: auto;
+    }
+  }
+}
+
+
+.doodle-confection {
+  @include image_block('../img/confection.png');
+  width: 95%;
+  height: 34rem;
+  margin-right: 0;
+  margin-right: auto;
+
+  @media screen and (max-width: 1000px){
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+
+  }
+
+  @media screen and (max-width: $bp-small){
+    margin-top: -2rem;
+    height: 40vh;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+}

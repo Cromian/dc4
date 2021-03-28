@@ -186,32 +186,6 @@ header .container {
   border-top: hidden;
 }
 
-.intro-banner {
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-size: 50%;
-  overflow: hidden;
-  display: grid;
-  align-items: center;
-}
-@media screen and (min-width: 600px) {
-  .intro-banner .lb {
-    display: block;
-  }
-}
-.intro-banner .subtitle {
-  line-height: 1;
-}
-.intro-banner .banner-text {
-  width: 60%;
-}
-@media screen and (max-width: 600px) {
-  .intro-banner .banner-text {
-    width: unset;
-    margin: auto;
-  }
-}
-
 .banner-text {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -254,33 +228,6 @@ header .container {
   margin-bottom: 2rem;
 }
 
-.doodle-office {
-  display: block;
-  background-image: url("../img/office.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  width: 100%;
-  height: 35rem;
-  margin: auto;
-}
-@media screen and (max-width: 960px) {
-  .doodle-office {
-    background-size: 70%;
-  }
-}
-@media screen and (max-width: 770px) {
-  .doodle-office {
-    background-size: 90%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .doodle-office {
-    background-size: 88%;
-    height: 45vh;
-  }
-}
-
 .doodle-me {
   display: block;
   background-image: url("../img/me.png");
@@ -298,33 +245,6 @@ header .container {
   }
 }
 
-.doodle-confection {
-  display: block;
-  background-image: url("../img/confection.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  width: 95%;
-  height: 34rem;
-  margin-right: 0;
-  margin-right: auto;
-}
-@media screen and (max-width: 1000px) {
-  .doodle-confection {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 3rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  .doodle-confection {
-    margin-top: -2rem;
-    height: 40vh;
-    width: 80%;
-    margin-bottom: 3rem;
-  }
-}
-
 #about, footer {
   background-image: url("../img/paint-line.svg");
   background-repeat: no-repeat;
@@ -333,8 +253,73 @@ header .container {
   background-position-x: -10%;
 }
 
+.arrow-text {
+  font-size: 2rem;
+  font-family: "Alegreya", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 200px;
+  background-image: url("../img/arrow-line.svg");
+  background-repeat: no-repeat;
+  background-size: 32%;
+  background-position: center center;
+  padding-top: 7.6rem;
+  padding-bottom: 6.3rem;
+  margin-top: -6.5rem;
+  margin-bottom: 1rem;
+}
+.arrow-text span {
+  background-color: white;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.arrow-text .alt {
+  background-color: #EDF6F6;
+}
+
+.cc {
+  font-size: medium;
+}
+
+.msg {
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  font-family: "Architects Daughter", cursive;
+}
+
+.center {
+  text-align: center;
+}
+
 footer {
   background-position-y: 2.5%;
+  padding-top: 3rem;
+}
+@media screen and (max-width: 770px) {
+  footer .banner-text {
+    margin-bottom: unset;
+  }
+}
+footer .social-links {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+footer .social-links a {
+  margin-right: 0.8rem;
+  font-size: 1.8rem;
+}
+
+.e404 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+.e404 p {
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 #about {
@@ -387,33 +372,6 @@ footer {
   color: white;
 }
 
-.arrow-text {
-  font-size: 2rem;
-  font-family: "Alegreya", serif;
-  font-style: italic;
-  font-weight: 400;
-  text-align: center;
-  display: block;
-  margin: auto;
-  width: 200px;
-  background-image: url("../img/arrow-line.svg");
-  background-repeat: no-repeat;
-  background-size: 32%;
-  background-position: center center;
-  padding-top: 7.6rem;
-  padding-bottom: 6.3rem;
-  margin-top: -6.5rem;
-  margin-bottom: 1rem;
-}
-.arrow-text span {
-  background-color: white;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-}
-.arrow-text .alt {
-  background-color: #EDF6F6;
-}
-
 .happy-quote p {
   margin: 0;
   margin-top: 0.5rem;
@@ -425,42 +383,76 @@ footer {
   color: black;
   font-style: italic;
 }
-.cc {
-  font-size: medium;
+.doodle-office {
+  display: block;
+  background-image: url("../img/office.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 35rem;
+  margin: auto;
 }
-
-.msg {
-  margin-bottom: 1rem;
-  margin-top: -1rem;
-  font-family: "Architects Daughter", cursive;
-}
-
-.center {
-  text-align: center;
-}
-
-@media screen and (max-width: 770px) {
-  footer .banner-text {
-    margin-bottom: unset;
+@media screen and (max-width: 960px) {
+  .doodle-office {
+    background-size: 70%;
   }
 }
-footer .social-links {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+@media screen and (max-width: 770px) {
+  .doodle-office {
+    background-size: 90%;
+  }
 }
-footer .social-links a {
-  margin-right: 0.8rem;
-  font-size: 1.5rem;
+@media screen and (max-width: 600px) {
+  .doodle-office {
+    background-size: 88%;
+    height: 45vh;
+  }
 }
 
-.e404 {
-  margin-top: 12rem;
-  margin-bottom: 12rem;
-  text-align: center;
+@media screen and (min-width: 600px) {
+  .intro-banner .lb {
+    display: block;
+  }
 }
-.e404 p {
-  margin: auto;
-  margin-bottom: 2rem;
+.intro-banner .subtitle {
+  line-height: 1;
+}
+.intro-banner .banner-text {
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+  .intro-banner .banner-text {
+    width: unset;
+    margin: auto;
+  }
+}
+
+.doodle-confection {
+  display: block;
+  background-image: url("../img/confection.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 95%;
+  height: 34rem;
+  margin-right: 0;
+  margin-right: auto;
+}
+@media screen and (max-width: 1000px) {
+  .doodle-confection {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .doodle-confection {
+    margin-top: -2rem;
+    height: 40vh;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,28 +28,35 @@
 
 <main>
   <!-- This line renders a page overide i.e. page--front.tpl.php -->
-  <?php if (isset($page_content)) { include($page_content); } ?>
+  <?php if (isset($page_content)) { include($page_content); } else { ?>
 
-  <div class="container">
     <!-- This line renders the content template, i.e. a post or page. -->
     <?php if (isset($page_data['template_type']) && $page_data['template_type'] == 'content') { ?>
-      <?php render_templateContent($page_data); ?>
+        <section>
+          <div class="container"><?php render_templateContent($page_data); ?></div>
+        </section>
+      <?php } ?>
+
+      <!-- This line renders a list page, i.e. blog, tag or category -->
+      <?php if (isset($page_data['template_type']) && $page_data['template_type'] == 'list') { ?>
+        <section>
+          <div class="container"><?php  render_templateList($page_data); ?></div>
+        </section>
+      <?php } ?>
+
+      <!-- This renders the 404 page. Customize as you see fit. -->
+      <?php if (isset($page_data['status'])) { if ($page_data['status'] == '404') {?>
+        <section>
+        <div class="e404">
+          <h1>Yikes!</h1>
+          <p>It looks like something terrible has happened, and this page no longer exists.</p>
+          <a href="#" class="button">Go Back</a>
+        </div>
+        </section>
+      <?php } } ?>
+  
     <?php } ?>
 
-    <!-- This line renders a list page, i.e. blog, tag or category -->
-    <?php if (isset($page_data['template_type']) && $page_data['template_type'] == 'list') { ?>
-      <?php  render_templateList($page_data); ?>
-    <?php } ?>
-
-    <!-- This renders the 404 page. Customize as you see fit. -->
-    <?php if (isset($page_data['status'])) { if ($page_data['status'] == '404') {?>
-      <div class="e404">
-        <h1>Yikes!</h1>
-        <p>It looks like something terrible has happened, and this page no longer exists.</p>
-        <a href="#" class="button">Go Back</a>
-      </div>
-    <?php } } ?>
-  </div>
 </main>
 
 <footer class="alt-section" id="contact">

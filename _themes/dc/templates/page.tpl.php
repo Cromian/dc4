@@ -20,7 +20,7 @@
       <a href="<?php render_baseUrl(); ?>" class="logo" aria-label="Logo"></a>
     </div>
     <div>
-      <!-- <div id="menu-icon" onclick="slideToggle()">☰</div> -->
+      <div id="menu-icon" onclick="slideToggle()">☰</div>
       <nav id="menu-well"><?php render_siteMenu(); ?></nav>
     </div>
   </div>

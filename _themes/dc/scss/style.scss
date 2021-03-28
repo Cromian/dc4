@@ -1,6 +1,6 @@
 // General Vars
 $max-width: 1300px;
-$bp-small: 600px;
+$bp-small: 700px;
 
 @import "text";
 @import "grid";
@@ -119,12 +119,16 @@ section {
   }
 
 
-
   #menu-icon {
     float: right;
     font-size: 2rem;
     position: relative;
     z-index: 2;
+    cursor: pointer;
+
+    &:hover {
+      color: $btn-accent;
+    }
     @media screen and (min-width: 800px) {
       display: none;
     }
@@ -354,6 +358,11 @@ header {
 footer {
   background-position-y: 2.5%;
   padding-top: 3rem;
+  @media screen and (max-width: $bp-small) {
+    padding-top: unset;
+    background-size: 80%;
+    background-position-x: -40%;
+  }
 
   .banner-text{
     @media screen and (max-width: 770px) {

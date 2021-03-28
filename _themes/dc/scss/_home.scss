@@ -25,6 +25,12 @@
     padding-bottom: 20rem;
     background-position-y: 45rem;
   }
+
+  @media screen and (max-width: $bp-small) {
+    background-position-x: center;
+    padding-bottom: 20rem;
+    background-position-y: 50rem;
+  }
 }
 
 // Misc

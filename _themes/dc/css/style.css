@@ -174,6 +174,7 @@ section {
 
 header {
   background-color: #EDF6F6;
+  padding-bottom: 1rem;
 }
 header .container {
   border-bottom: 1px solid #99CBCB;
@@ -450,6 +451,16 @@ footer .social-links {
 footer .social-links a {
   margin-right: 0.8rem;
   font-size: 1.5rem;
+}
+
+.e404 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  text-align: center;
+}
+.e404 p {
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

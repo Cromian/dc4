@@ -43,8 +43,11 @@
 
     <!-- This renders the 404 page. Customize as you see fit. -->
     <?php if (isset($page_data['status'])) { if ($page_data['status'] == '404') {?>
-      <h1>Gratz. You Broke it!</h1>
-      <p>It looks like something terrible has happened, and this page no longer exists.</p>
+      <div class="e404">
+        <h1>Yikes!</h1>
+        <p>It looks like something terrible has happened, and this page no longer exists.</p>
+        <a href="#" class="button">Go Back</a>
+      </div>
     <?php } } ?>
   </div>
 </main>

@@ -96,6 +96,11 @@ section {
   @include image_block('../img/logo.png');
   width: 325px;
   height: 110px;
+
+  @media screen and (max-width: 800px) {
+    width: 250px;
+
+  }
 }
 
 .nav-well {

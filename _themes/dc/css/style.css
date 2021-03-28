@@ -141,6 +141,11 @@ section {
   width: 325px;
   height: 110px;
 }
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 250px;
+  }
+}
 
 .nav-well {
   font-family: "Alegreya", serif;

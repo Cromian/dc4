@@ -4,6 +4,8 @@
 }
 
 
+
+
 .doodle-globe {
   @include image_block('../img/globe.png');
   width: 95%;
@@ -25,3 +27,32 @@
 }
 
 
+.featured-image {
+  display: block;
+  margin: auto;
+  height: 600px;
+  width: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: -19rem;
+  margin-top: 2rem;
+
+  @media screen and (max-width: $bp-small){
+    margin-bottom: -10rem;
+    height: 300px;
+    width: 80%;
+  }
+}
+
+.showcase {
+  padding-top: 18rem;
+  @media screen and (max-width: $bp-small){
+    padding-top: 10rem;
+
+  }
+
+  .arrow-text {
+    margin-top: -20rem;
+  }
+}

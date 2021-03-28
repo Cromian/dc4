@@ -1,10 +1,18 @@
 <section class="subheader intro-banner content">
   <div class="container">
     <h1 class="title"><?php echo $page_data['title']; ?></h1>
+    <?php if (!empty($page_data['meta']['featured_image'])) { ?>
+      <div class="featured-image" style="background-image: url('<?php echo $page_data['meta']['featured_image']; ?>');"></div>
+    <?php } ?>
   </div>
 </section>
 
-<section class="page-body">
+<?php if (!empty($page_data['meta']['featured_image'])) { ?>
+  <section class="page-body showcase">
+<?php } else { ?>
+  <section class="page-body">
+<?php } ?>
+
   <div class="container">
   <h2 class="arrow-text"><span>Our Process</span></h2>
     <div class="content-well">

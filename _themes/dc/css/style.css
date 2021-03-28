@@ -539,4 +539,35 @@ footer .social-links a {
   }
 }
 
+.featured-image {
+  display: block;
+  margin: auto;
+  height: 600px;
+  width: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: -19rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .featured-image {
+    margin-bottom: -10rem;
+    height: 300px;
+    width: 80%;
+  }
+}
+
+.showcase {
+  padding-top: 18rem;
+}
+@media screen and (max-width: 600px) {
+  .showcase {
+    padding-top: 10rem;
+  }
+}
+.showcase .arrow-text {
+  margin-top: -20rem;
+}
+
 /*# sourceMappingURL=style.css.map */

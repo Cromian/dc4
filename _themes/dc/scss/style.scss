@@ -200,12 +200,24 @@ header {
  
 }
 
+.content {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .title {
+    max-width: 850px;
+    margin: auto;
+  }
+
+}
+
 .page-body {
   padding-top: 6rem;
 
   .arrow-text {
     margin-left: 0;
-    margin-top: -9rem;
+    margin-top: -8.5rem;
     float: left;
     @media screen and (max-width: 1100px) {
       margin-left: -5rem;
@@ -217,16 +229,24 @@ header {
   }
 
   .doodle-scribble {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-well {
+    max-width: 68ch;
+    display: block;
+    margin: auto;
+    margin-top: -3rem;
+
+    p {
+      max-width: unset;
+    }
   }
 
   .list-well {
     max-width: 650px;
     margin: auto;
-
-    p {
-      max-width: 65ch;
-    }
 
     article {
       border-bottom: 1px solid $bg_accent;

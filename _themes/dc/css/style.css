@@ -245,12 +245,22 @@ header .container {
   }
 }
 
+.content {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.content .title {
+  max-width: 850px;
+  margin: auto;
+}
+
 .page-body {
   padding-top: 6rem;
 }
 .page-body .arrow-text {
   margin-left: 0;
-  margin-top: -9rem;
+  margin-top: -8.5rem;
   float: left;
 }
 @media screen and (max-width: 1100px) {
@@ -264,14 +274,21 @@ header .container {
   }
 }
 .page-body .doodle-scribble {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.page-body .content-well {
+  max-width: 68ch;
+  display: block;
+  margin: auto;
+  margin-top: -3rem;
+}
+.page-body .content-well p {
+  max-width: unset;
 }
 .page-body .list-well {
   max-width: 650px;
   margin: auto;
-}
-.page-body .list-well p {
-  max-width: 65ch;
 }
 .page-body .list-well article {
   border-bottom: 1px solid #99CBCB;
@@ -506,7 +523,7 @@ footer .social-links a {
   height: 34rem;
   margin-right: 0;
   margin-right: auto;
-  margin-bottom: -15rem;
+  margin-bottom: -17rem;
 }
 @media screen and (max-width: 1000px) {
   .doodle-globe {

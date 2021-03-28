@@ -139,8 +139,8 @@ header {
 
   .container {
     border-bottom: 1px solid $bg_accent;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -150,14 +150,16 @@ header {
 }
 
 .intro-banner {
-  background-image: url('../img/comp.png');
+  // background-image: url('../img/comp.png');
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-size: 50%;
   overflow: hidden;
-  // height: 55vh;
+  // min-height: 55vh;
   display: grid;
   align-items: center;
+  // padding-top: 4rem;
+  // padding-bottom: 4rem;
 
   .lb {
     @media screen and (min-width: $bp-small) {
@@ -247,13 +249,39 @@ header {
  
 }
 
+.doodle-confection {
+  @include image_block('../img/confection.png');
+  width: 95%;
+  height: 34rem;
+  margin-right: 0;
+  margin-right: auto;
+
+  @media screen and (max-width: 1000px){
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+
+  }
+
+  @media screen and (max-width: $bp-small){
+    margin-top: -2rem;
+    height: 40vh;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+}
+
 // Sections
 #about, footer {
   background-image: url('../img/paint-line.svg');
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 40%;
   background-position-y: 8%;
   background-position-x: -10%;
+}
+
+footer {
+  background-position-y: 2.5%;
 }
 
 #about {
@@ -274,18 +302,14 @@ header {
   background-position-x: center;
   background-size: 320px;
   min-height: 550px;
-  @media screen and (max-width: 1270px) {
+  @media screen and (max-width: 1175px) {
     background-position-x: 90%;
     padding-bottom: 5rem;
   }
   @media screen and (max-width: 800px) {
     background-position-x: center;
-    padding-bottom: 50vh;
-    background-position-y: 80vh;
-  }
-
-  @media screen and (max-width: $bp-small) {
-    background-position-y: 110vh;
+    padding-bottom: 20rem;
+    background-position-y: 45rem;
   }
 }
 
@@ -377,6 +401,16 @@ footer {
   .banner-text{
     @media screen and (max-width: 770px) {
       margin-bottom: unset;
+    }
+  }
+
+  .social-links {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    a {
+      margin-right: .8rem;
+      font-size: 1.5rem;
     }
   }
 }

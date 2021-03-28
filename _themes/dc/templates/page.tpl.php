@@ -6,6 +6,7 @@
   <?php render_themeCSS(); ?>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,400&family=Architects+Daughter&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <?php render_templateMetaHead($page_data); ?>
 </head>
 <body>
@@ -56,15 +57,19 @@
           <h2><span class="subtitle">How Can</span> We Help You?</h2>
           <p>Our team has exceptional proficiency in building one-of-a-kind websites, leveraging the latest web technologies, design principles, and product strategies. Let us know how we can do the same for you!</p>
           <a href="mailto:hello@digitalconfection.com?Subject=Hello%20From%20Website" class="button">Lets Connect</a>
+          <div class="social-links">
+            <a href="https://twitter.com/digiconfec" aria-label="Twitter Link"><i class="fab fa-twitter"></i></a> <a href="https://github.com/digitalconfection" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
       <div>
-        <div class="doodle-me"></div>
+        <a href="https://ollyjolly.com/product/better-together-gin-tonic-t-shirt/" target="_blank" aria-label="OllyJolly T-Shirt Image Link" class="doodle-me"></a>
       </div>
     </div>
     <div class="msg center">Have a fabulous <span id="foot-day">day</span>!</div>
     <div class="cc center">
-      ©<?php echo date('Y') . ' '?><a href="<?php render_baseUrl(); ?>">Digital Confection, LLC</a>.
+      ©<?php echo date('Y') . ' '?><a href="<?php render_baseUrl(); ?>">Digital Confection, LLC</a>.<br>
+      Proudly built with <a href="https://typetote.com" href="_blank">TypeTote</a>, our simple homegrown CMS!
     </div>
   </div>
 </footer>

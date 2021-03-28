@@ -66,7 +66,7 @@ h6 {
   display: grid;
   width: 100%;
   grid-gap: 5%;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 @media screen and (max-width: 500px) {
   .three-col {
@@ -177,8 +177,8 @@ header {
 }
 header .container {
   border-bottom: 1px solid #99CBCB;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .subheader {
@@ -186,7 +186,6 @@ header .container {
 }
 
 .intro-banner {
-  background-image: url("../img/comp.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-size: 50%;
@@ -298,12 +297,43 @@ header .container {
   }
 }
 
+.doodle-confection {
+  display: block;
+  background-image: url("../img/confection.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 95%;
+  height: 34rem;
+  margin-right: 0;
+  margin-right: auto;
+}
+@media screen and (max-width: 1000px) {
+  .doodle-confection {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .doodle-confection {
+    margin-top: -2rem;
+    height: 40vh;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+}
+
 #about, footer {
   background-image: url("../img/paint-line.svg");
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 40%;
   background-position-y: 8%;
   background-position-x: -10%;
+}
+
+footer {
+  background-position-y: 2.5%;
 }
 
 #about {
@@ -325,7 +355,7 @@ header .container {
   background-size: 320px;
   min-height: 550px;
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1175px) {
   #testimonials {
     background-position-x: 90%;
     padding-bottom: 5rem;
@@ -334,13 +364,8 @@ header .container {
 @media screen and (max-width: 800px) {
   #testimonials {
     background-position-x: center;
-    padding-bottom: 50vh;
-    background-position-y: 80vh;
-  }
-}
-@media screen and (max-width: 600px) {
-  #testimonials {
-    background-position-y: 110vh;
+    padding-bottom: 20rem;
+    background-position-y: 45rem;
   }
 }
 
@@ -417,6 +442,14 @@ header .container {
   footer .banner-text {
     margin-bottom: unset;
   }
+}
+footer .social-links {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+footer .social-links a {
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

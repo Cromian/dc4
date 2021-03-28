@@ -163,7 +163,7 @@ section {
 }
 .nav-well ul li {
   display: inline;
-  margin-right: 1rem;
+  margin-right: 2rem;
   font-size: 2rem;
 }
 @media screen and (max-width: 600px) {
@@ -275,7 +275,8 @@ header .container {
 }
 .page-body .list-well article {
   border-bottom: 1px solid #99CBCB;
-  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
 }
 .page-body .list-well article:first-child {
   margin-top: unset;

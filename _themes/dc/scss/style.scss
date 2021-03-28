@@ -120,7 +120,7 @@ section {
     
     li {
       display: inline;
-      margin-right: 1rem;
+      margin-right: 2rem;
       font-size: 2rem;
     }
   }
@@ -230,7 +230,8 @@ header {
 
     article {
       border-bottom: 1px solid $bg_accent;
-      margin-top: 2rem;
+      padding-bottom: .5rem;
+      margin-top: 2.5rem;
       
       &:first-child {
         margin-top: unset;

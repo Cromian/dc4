@@ -200,6 +200,46 @@ header {
  
 }
 
+.page-body {
+  padding-top: 6rem;
+
+  .arrow-text {
+    margin-left: 0;
+    margin-top: -9rem;
+    float: left;
+    @media screen and (max-width: 1100px) {
+      margin-left: -5rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .doodle-scribble {
+    margin-top: 3rem;
+  }
+
+  .list-well {
+    max-width: 650px;
+    margin: auto;
+
+    p {
+      max-width: 65ch;
+    }
+
+    article {
+      border-bottom: 1px solid $bg_accent;
+      margin-top: 2rem;
+      
+      &:first-child {
+        margin-top: unset;
+      }
+    }
+  }
+
+}
+
 // Sections
 #about, footer {
   background-image: url('../img/paint-line.svg');
@@ -285,3 +325,4 @@ footer {
 }
 
 @import "home";
+@import "work";

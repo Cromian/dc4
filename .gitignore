@@ -5,7 +5,7 @@ rss.xml
 dev.php
 
 # For core development
-_data/*
+# _data/*
 
 # For production
 # _data/*.json

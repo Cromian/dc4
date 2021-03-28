@@ -245,6 +245,42 @@ header .container {
   }
 }
 
+.page-body {
+  padding-top: 6rem;
+}
+.page-body .arrow-text {
+  margin-left: 0;
+  margin-top: -9rem;
+  float: left;
+}
+@media screen and (max-width: 1100px) {
+  .page-body .arrow-text {
+    margin-left: -5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .page-body .arrow-text {
+    display: none;
+  }
+}
+.page-body .doodle-scribble {
+  margin-top: 3rem;
+}
+.page-body .list-well {
+  max-width: 650px;
+  margin: auto;
+}
+.page-body .list-well p {
+  max-width: 65ch;
+}
+.page-body .list-well article {
+  border-bottom: 1px solid #99CBCB;
+  margin-top: 2rem;
+}
+.page-body .list-well article:first-child {
+  margin-top: unset;
+}
+
 #about, footer {
   background-image: url("../img/paint-line.svg");
   background-repeat: no-repeat;
@@ -452,6 +488,36 @@ footer .social-links a {
     height: 40vh;
     width: 80%;
     margin-bottom: 3rem;
+  }
+}
+
+.work {
+  overflow: hidden;
+}
+
+.doodle-globe {
+  display: block;
+  background-image: url("../img/globe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 95%;
+  height: 34rem;
+  margin-right: 0;
+  margin-right: auto;
+  margin-bottom: -15rem;
+}
+@media screen and (max-width: 1000px) {
+  .doodle-globe {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .doodle-globe {
+    width: 80%;
   }
 }
 

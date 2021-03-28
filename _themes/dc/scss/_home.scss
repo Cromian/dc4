@@ -53,9 +53,7 @@
     font-size: 90%;
   }
 
-
   .credit {
-    // text-align: right;
     font-size: medium;
     font-weight: bold;
     color: black;
@@ -64,7 +62,6 @@
 
   strong {
     @extend h5;
-    // font-weight: 900;
   }
 }
 

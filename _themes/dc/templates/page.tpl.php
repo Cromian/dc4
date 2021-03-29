@@ -79,7 +79,7 @@
     <div class="msg center">Have a fabulous <span id="foot-day">day</span>!</div>
     <div class="cc center">
       ©<?php echo date('Y') . ' '?><a href="<?php render_baseUrl(); ?>">Digital Confection, LLC</a>.<br>
-      Proudly built with <a href="https://typetote.com" href="_blank">TypeTote</a>, our simple homegrown CMS!
+      Proudly built with <a href="https://typetote.com" href="_blank">TypeTote</a>, our straightforward CMS!
     </div>
   </div>
 </footer>

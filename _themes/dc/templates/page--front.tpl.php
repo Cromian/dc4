@@ -73,7 +73,7 @@
       <div>
         <div class="happy-quote">
           <strong>Professional & Efficient</strong>
-          <p>"We have worked with Misha on multiple high-profile Federal projects over the past <?php echo date('Y') - '2016'; ?> years. He has brought a lot of value to how we develop custom websites for our clients, while maintaining a professional and efficient work ethic. We look forward to continuing our relationship for many years to come!"</p>
+          <p>"We have worked with Misha on multiple high-profile Federal projects over the years. He has brought a lot of value to how we develop custom websites for our clients, while maintaining a professional and efficient work ethic. We look forward to continuing our relationship for many years to come!"</p>
           <div class="credit">- Daniel Bowens, Async-Nu Microsystems</div>
         </div>
       </div>

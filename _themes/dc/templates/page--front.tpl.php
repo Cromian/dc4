@@ -2,7 +2,7 @@
   <div class="container">
     <div class="two-col">
       <div>
-        <h1><span class="subtitle">Creative</span> <span class="lb">High-Quality</span> Web Development.</h1>
+        <h1><span class="subtitle">Creative,</span> <span class="lb">High-Quality</span> Web Development.</h1>
         <p>Digital Confection is a is a DC metro area based creative web development studio specializing in building simple, elegant, high-quality websites. From exceptional customer services, timely assistance, and creative thinking, we help customers succeed efficiently and effectively.</p>
         <br>
         <a href="mailto:hello@digitalconfection.com?Subject=Hello%20From%20Website" class="button">Lets Connect</a>

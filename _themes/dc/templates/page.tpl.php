@@ -56,8 +56,11 @@
       <?php } } ?>
   
     <?php } ?>
-
 </main>
+
+<div class="container">
+  <div id="letter" onclick="emailSignup();">Read Me!</div>
+</div>
 
 <footer class="alt-section" id="contact">
   <div class="container">
@@ -84,6 +87,7 @@
   </div>
 </footer>
 
+<?php include('_email.php'); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <?php render_themeJS(); ?>
 </body>

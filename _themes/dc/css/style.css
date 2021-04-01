@@ -392,7 +392,7 @@ header .container {
 
 footer {
   background-position-y: 2.5%;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 @media screen and (max-width: 700px) {
   footer {
@@ -423,6 +423,128 @@ footer .social-links a {
 .e404 p {
   margin: auto;
   margin-bottom: 2rem;
+}
+
+#letter {
+  display: block;
+  background-image: url("../img/letter.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  cursor: pointer;
+  width: 155px;
+  height: 100px;
+  font-size: small;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+}
+#letter:hover {
+  animation-name: jitter;
+  animation-duration: 0.5s;
+}
+
+@keyframes jitter {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.email_signup_well {
+  background-color: rgba(0, 0, 0, 0.534);
+  display: grid;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  align-items: center;
+  display: none;
+}
+.email_signup_well input[type=email] {
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  border: hidden;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+.email_signup_well #close-prompt {
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  display: block;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -2rem;
+  float: right;
+  position: relative;
+  top: -1.2rem;
+  right: -3.2rem;
+  border: 2px solid black;
+}
+.email_signup_well #close-prompt:hover {
+  background-color: white;
+  color: black;
+}
+.email_signup_well .button {
+  margin-top: 1.5rem;
+}
+.email_signup_well .email-prompt-bg {
+  max-width: 540px;
+  width: 90%;
+  display: block;
+  position: relative;
+  z-index: 5;
+  background-color: white;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 8px;
+  background-image: linear-gradient(45deg, #f25c3f 16.67%, #88c1d0 16.67%, #88c1d0 33.33%, #fff 33.33%, #fff 50%, #f25c3f 50%, #f25c3f 66.67%, #88c1d0 66.67%, #88c1d0 83.33%, #fff 83.33%, #fff 100%);
+  background-size: 84.85px 84.85px;
+  -webkit-box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.73);
+  box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.73);
+}
+.email_signup_well .email-prompt-bg .prompt {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
 }
 
 #about {

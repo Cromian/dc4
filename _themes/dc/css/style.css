@@ -390,6 +390,24 @@ header .container {
   text-align: center;
 }
 
+.button {
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  background-color: #FFAF73;
+  padding: 0.7rem 2rem;
+  border: 1px solid #F76C05;
+  color: #404141;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  -webkit-appearance: none;
+}
+.button:hover {
+  background-color: #F76C05;
+  color: white;
+}
+
 footer {
   background-position-y: 2.5%;
   padding-top: 4rem;
@@ -440,13 +458,19 @@ footer .social-links a {
   display: grid;
   align-items: center;
   text-align: center;
-  margin-top: -3rem;
+  margin-top: -4rem;
   margin-bottom: -3rem;
   margin-left: auto;
   margin-right: 2rem;
   position: relative;
   z-index: 1;
   line-height: 1;
+}
+@media screen and (max-width: 800px) {
+  #letter {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 #letter:hover {
   animation-name: jitter;
@@ -515,7 +539,7 @@ footer .social-links a {
 }
 .email_signup_well .email-prompt-bg {
   max-width: 540px;
-  width: 90%;
+  width: 80%;
   display: block;
   position: relative;
   z-index: 5;
@@ -531,6 +555,7 @@ footer .social-links a {
 .email_signup_well .email-prompt-bg .prompt {
   background-color: white;
   padding: 1.5rem;
+  padding-top: 2rem;
   border-radius: 8px;
 }
 
@@ -585,23 +610,6 @@ footer .social-links a {
     padding-bottom: 20rem;
     background-position-y: 50rem;
   }
-}
-
-.button {
-  font-family: "Alegreya", serif;
-  font-weight: 700;
-  background-color: #FFAF73;
-  padding: 0.7rem 2rem;
-  border: 1px solid #F76C05;
-  color: #404141;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-.button:hover {
-  background-color: #F76C05;
-  color: white;
 }
 
 .happy-quote p {

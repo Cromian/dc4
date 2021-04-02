@@ -355,6 +355,25 @@ header {
   text-align: center;
 }
 
+.button {
+  @include heading-font();
+  background-color: $btn;
+  padding: .7rem 2rem;
+  border: 1px solid $btn-accent;
+  color: $body_accent;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  -webkit-appearance: none;
+
+  &:hover {
+    background-color: $btn-accent;
+    color: white;
+  }
+
+}
+
 footer {
   background-position-y: 2.5%;
   padding-top: 4rem;
@@ -397,6 +416,10 @@ footer {
 #letter {
   @include image_block('../img/letter.png');
   @include heading-font();
+  @media screen and (max-width: 800px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   cursor: pointer;
   width: 155px;
   height: 100px;
@@ -404,7 +427,7 @@ footer {
   display: grid;
   align-items: center;
   text-align: center;
-  margin-top: -3rem;
+  margin-top: -4rem;
   margin-bottom: -3rem;
   margin-left: auto; 
   margin-right: 2rem;
@@ -487,7 +510,7 @@ footer {
 
   .email-prompt-bg {
     max-width: 540px;
-    width: 90%;
+    width: 80%;
     display: block;
     position: relative;
     z-index: 5;

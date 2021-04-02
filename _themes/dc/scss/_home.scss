@@ -34,23 +34,7 @@
 }
 
 // Misc
-.button {
-  @include heading-font();
-  background-color: $btn;
-  padding: .7rem 2rem;
-  border: 1px solid $btn-accent;
-  color: $body_accent;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
 
-  &:hover {
-    background-color: $btn-accent;
-    color: white;
-  }
-
-}
 
 .happy-quote {
   p {

@@ -32,6 +32,9 @@
         <p>From logos, templates, mobile mockups, and wireframes, our diverse skillset allows us to easily complement our other services and help you define a style that you will enjoy.</p>
       </div>
     </div>
+    <div class="more-link">
+      <a href="freelance-and-agency-support-services">Learn about our Freelance & Agency Support Services <i class="fas fa-arrow-right"></i></a>
+    </div>
   </div>
   <div class="doodle-scribble"></div>
 </section>

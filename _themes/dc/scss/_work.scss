@@ -28,6 +28,44 @@
   }
 }
 
+.doodle-gifts {
+  @include image_block('../img/gifts.png');
+  width: 80%;
+  height: 25rem;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: -15rem;
+  background-position: top;
+
+  @media screen and (max-width: 1000px){
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    // margin-top: -5rem;
+  }
+
+  @media screen and (max-width: $bp-small){
+    width: 80%;
+    margin-top: -5rem;
+    background-position: center;
+
+  }
+}
+
+.fass {
+  .arrow-text {
+    margin-top: -5rem;
+  }
+}
+
+
+.more-link {
+  @media screen and (max-width: $bp-small){
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+}
 
 .featured-image {
   display: block;

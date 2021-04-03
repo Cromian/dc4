@@ -412,6 +412,11 @@ footer {
 
 }
 
+.more-link {
+  text-align: center;
+  font-style: italic
+}
+
 // Email letter.
 #letter {
   @include image_block('../img/letter.png');

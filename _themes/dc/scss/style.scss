@@ -319,10 +319,10 @@ header {
   text-align: center;
   display: block;
   margin: auto;
-  width: 200px;
+  width: 150px;
   background-image: url('../img/arrow-line.svg');
   background-repeat: no-repeat;
-  background-size: 32%;
+  background-size: 45%;
   background-position: center center;
   padding-top: 7.6rem;
   padding-bottom: 6.3rem;
@@ -331,6 +331,8 @@ header {
     background-color: white;
     padding-bottom: .5rem;
     padding-top: .5rem;
+    position: relative;
+    top: 1rem;
   }
 
   .alt {

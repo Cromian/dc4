@@ -3,7 +3,7 @@
     <div class="two-col">
       <div>
         <h1><?php echo $page_data['title']; ?></h1>
-        <p>Our private label development services for designers and web development agencies.</p>
+        <p>Our private label development services for designers<br> and digital agencies.</p>
       </div>
       <div>
         <div class="doodle-gifts"></div>

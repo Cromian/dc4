@@ -357,10 +357,10 @@ header .container {
   text-align: center;
   display: block;
   margin: auto;
-  width: 200px;
+  width: 150px;
   background-image: url("../img/arrow-line.svg");
   background-repeat: no-repeat;
-  background-size: 32%;
+  background-size: 45%;
   background-position: center center;
   padding-top: 7.6rem;
   padding-bottom: 6.3rem;
@@ -371,6 +371,8 @@ header .container {
   background-color: white;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  position: relative;
+  top: 1rem;
 }
 .arrow-text .alt {
   background-color: #EDF6F6;
@@ -714,7 +716,7 @@ footer .social-links a {
   height: 34rem;
   margin-right: 0;
   margin-right: auto;
-  margin-bottom: -17rem;
+  margin-bottom: -18rem;
 }
 @media screen and (max-width: 1000px) {
   .doodle-globe {
@@ -727,7 +729,7 @@ footer .social-links a {
 @media screen and (max-width: 700px) {
   .doodle-globe {
     width: 80%;
-    margin-top: -10rem;
+    margin-top: -5rem;
   }
 }
 
@@ -763,10 +765,17 @@ footer .social-links a {
   margin-top: -5rem;
 }
 
+.more-link {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .more-link {
+    margin-top: 3rem;
+  }
+}
 @media screen and (max-width: 700px) {
   .more-link {
     margin-top: 6rem;
-    margin-bottom: 2rem;
     text-align: left;
   }
 }

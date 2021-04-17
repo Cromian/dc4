@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -564,6 +565,38 @@ footer .social-links a {
   padding: 1.5rem;
   padding-top: 2rem;
   border-radius: 8px;
+}
+
+.breadcrumbs {
+  font-size: medium;
+  margin-bottom: 2.5rem;
+  color: #5b5959;
+}
+.breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 770px) {
+  .breadcrumbs {
+    margin-bottom: 6rem;
+    margin-top: -3rem;
+  }
+}
+.breadcrumbs li {
+  display: inline;
+  margin-right: 1rem;
+}
+.breadcrumbs li:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-left: 1rem;
+  font-size: large;
+  position: relative;
+  top: 2px;
+}
+.breadcrumbs li:last-child:after {
+  content: "";
+  margin: unset;
 }
 
 .sr-only {

@@ -59,6 +59,7 @@
 </main>
 
 <div class="container">
+  <?php echo render_breadcrumbs(); ?>
   <div id="letter" onclick="emailSignup();">Read Me!</div>
 </div>
 
@@ -82,7 +83,7 @@
     <div class="msg center">Have a fabulous <span id="foot-day">day</span>!</div>
     <div class="cc center">
       ©<?php echo date('Y') . ' '?><a href="<?php render_baseUrl(); ?>">Digital Confection, LLC</a>.<br>
-      Proudly built with <a href="https://typetote.com" href="_blank">TypeTote</a>, our straightforward CMS!
+      An <a href="https://www.greengeeks.com/track/vinobestro" target="_blank">eco-friendly</a> site, built with <a href="https://typetote.com" target="_blank">TypeTote</a>. Our straightforward CMS!
     </div>
   </div>
 </footer>

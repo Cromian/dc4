@@ -540,6 +540,45 @@ footer {
   }
 }
 
+.breadcrumbs {
+  font-size: medium;
+  margin-bottom: 2.5rem;
+  color: #5b5959;
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 770px) {
+    margin-bottom: 6rem;
+    margin-top: -3rem;
+  }
+
+   li {
+     display: inline;
+     margin-right: 1rem;
+
+     &:after {
+      content: "\f105";
+      font-family: 'Font Awesome 5 Free';
+      margin-left: 1rem;
+      font-size: large;
+      position: relative;
+      top: 2px;
+     }
+
+     &:last-child {
+
+      &:after {
+        content: '';
+        margin: unset;
+      }
+       
+     }
+   }
+}
+
 // 508 & Accessiblity
 .sr-only {
   position: absolute;

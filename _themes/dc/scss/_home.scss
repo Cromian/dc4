@@ -34,8 +34,6 @@
 }
 
 // Misc
-
-
 .happy-quote {
   p {
     margin: 0;
@@ -102,7 +100,6 @@
   }
 }
 
-
 .doodle-confection {
   @include image_block('../img/confection.png');
   width: 95%;
@@ -118,9 +115,9 @@
   }
 
   @media screen and (max-width: $bp-small){
-    margin-top: -2rem;
     height: 40vh;
     width: 80%;
     margin-bottom: 3rem;
+    background-size: 85%;
   }
 }

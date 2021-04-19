@@ -98,8 +98,7 @@ section {
   height: 110px;
 
   @media screen and (max-width: 800px) {
-    width: 250px;
-
+    width: 275px;
   }
 }
 
@@ -171,7 +170,6 @@ section {
       font-size: 2rem;
     }
   }
-
  
 }
 
@@ -183,6 +181,10 @@ header {
     border-bottom: 1px solid $bg_accent;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
+    @media screen and (max-width: 800px) {
+      padding-bottom: .5rem;
+      padding-top: .5rem;
+    }
   }
   padding-bottom: 1rem
 }
@@ -543,6 +545,7 @@ footer {
 .breadcrumbs {
   font-size: medium;
   margin-bottom: 2.5rem;
+  margin-top: -5rem;
   color: #5b5959;
 
   ol {

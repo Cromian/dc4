@@ -307,13 +307,14 @@ header {
 }
 
 // Sections
-#about, footer {
+#about, footer, #eco {
   background-image: url('../img/paint-line.svg');
   background-repeat: no-repeat;
   background-size: 40%;
   background-position-y: 8%;
   background-position-x: -10%;
 }
+
 
 .arrow-text {
   font-size: 2rem;
@@ -377,6 +378,7 @@ header {
   }
 
 }
+
 
 footer {
   background-position-y: 2.5%;

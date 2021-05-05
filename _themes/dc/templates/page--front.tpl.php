@@ -2,8 +2,8 @@
   <div class="container">
     <div class="two-col">
       <div>
-        <h1><span class="subtitle">Creative,</span> <span class="lb">High-Quality</span> Web Development.</h1>
-        <p>Digital Confection is a Washington, DC metro area-based creative web development studio specializing in building simple, elegant, high-quality websites. From exceptional customer services, timely assistance, and creative thinking, we help customers succeed efficiently and effectively.</p>
+        <h1><span class="subtitle">Custom,</span> <span class="lb">High-Quality</span> Web Development.</h1>
+        <p>Digital Confection is a web development studio that specialize in building custom, elegant, high-quality websites. From exceptional customer services, timely assistance, and creative thinking, we help customers succeed efficiently and effectively.</p>
         <br>
         <a href="mailto:hello@digitalconfection.com?Subject=Hello%20From%20Website" class="button">Lets Connect</a>
       </div>
@@ -82,4 +82,33 @@
       </div>
     </div>
   </div>
+</section>
+
+<section id="eco" aria-label="eco" class="alt-section">
+  <div class="container">
+    <!-- <h2 class="arrow-text"><span class="alt">Impact</span></h2> -->
+    <div class="two-col">
+      <div>
+        <h3><span class="subtitle">Embracing</span> Eco-Friendly Development.</h3>
+        <p>We take pride in our environmentally conscious web development approach. The web consumes a lot of energy, and much of it comes from un-clean sources. To help minimize our carbon footprint, here is what we do:</p>
+        <ul>
+          <li>Leverage a green energy hosting provider when possible</li>
+          <li>Reduce energy consumption by keeping page size small and load times fast</li>
+          <li>Embrace simple designs that maximize functionality and minimize redundancy</li>
+        </ul>
+      </div>
+      <div>
+        <div class="doodle-cookies"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clients">
+<div class="container">
+  <h3>Featured Clients</h3>
+  <p>Just some of the businesses and organizations we have had the opportunity to work with.</p>
+  <div class="logos"></div>
+  <div class="doodle-scribble"></div>
+</div>
 </section>

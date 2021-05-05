@@ -70,7 +70,7 @@
         <div class="banner-text">
           <h2><span class="subtitle">How Can</span> We Help You?</h2>
           <p>Our team has exceptional proficiency in building one-of-a-kind websites, leveraging the latest web technologies, design principles, and product strategies. Let us know how we can do the same for you!</p>
-          <a href="mailto:hello@digitalconfection.com?Subject=Hello%20From%20Website" class="button">Lets Connect</a>
+          <a href="mailto:hello@confection.dev?Subject=Hello%20From%20Website" class="button">Lets Connect</a>
           <div class="social-links">
             <a href="https://twitter.com/digiconfec" aria-label="Twitter Link"><i class="fab fa-twitter"></i></a> <a href="https://github.com/digitalconfection" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
           </div>

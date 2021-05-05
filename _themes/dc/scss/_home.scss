@@ -2,7 +2,7 @@
   padding-bottom: 5rem
 }
 
-#services {
+#services, #clients {
   background-image: url('../img/tech-line-white.svg');
   background-repeat: no-repeat;
   background-size: 30%;
@@ -73,14 +73,6 @@
 }
 
 .intro-banner {
-  // background-repeat: no-repeat;
-  // background-position-x: 100%;
-  // background-size: 50%;
-  // overflow: hidden;
-  // display: grid;
-  // align-items: center;
-
-
   .lb {
     @media screen and (min-width: $bp-small) {
       display: block;
@@ -119,5 +111,65 @@
     width: 80%;
     margin-bottom: 3rem;
     background-size: 85%;
+  }
+}
+
+.doodle-cookies {
+  @include image_block('../img/eco-cookie.svg');
+  width: 90%;
+  height: 38rem;
+  margin: auto;
+  @media screen and (max-width: 960px){
+    background-size: 70%;
+    height: 25rem;
+
+  }
+
+  @media screen and (max-width: 770px){
+    background-size: 90%;
+    height: 30rem;
+  }
+
+  @media screen and (max-width: $bp-small){
+    background-size: 88%;
+    height: 32vh;
+  }
+}
+
+#eco {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+
+#clients {
+  text-align: center;
+  padding: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+
+  @media screen and (max-width: $bp-small){
+    padding: unset;
+    padding-top: 4rem;
+  }
+
+  p {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .doodle-scribble {
+    margin-top: 3rem;
+  }
+
+  .logos {
+    @include image_block('../img/logos.png');
+    background-size: 85%;
+    height: 160px;
+
+    @media screen and (max-width: $bp-small){
+      background-size: 90%;
+      height: 100px;
+    }
   }
 }

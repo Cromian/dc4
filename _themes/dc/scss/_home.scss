@@ -116,7 +116,7 @@
 
 .doodle-cookies {
   @include image_block('../img/eco-cookie.svg');
-  width: 90%;
+  width: 85%;
   height: 38rem;
   margin: auto;
   @media screen and (max-width: 960px){
@@ -155,7 +155,7 @@
 
   p {
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .doodle-scribble {

@@ -238,6 +238,27 @@ header {
   height: 30rem;
   margin: auto;
 
+  &:hover {
+    &:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      content: '\f0c1';
+      position: relative;
+      display: block;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 8px;
+      color: white;
+      margin: auto;
+      top: 18.5rem;
+     
+
+      background-color: black;
+    }
+  }
+
   @media screen and (max-width: $bp-small){
     height: 40vh;
     margin-bottom: 2rem;
@@ -501,7 +522,7 @@ footer {
     font-size: large;
     font-weight: bold;
     cursor: pointer;
-    margin-top: -2rem;
+    margin-top: -2.5rem;
     float: right;
     position: relative;
     top: -1.2rem;

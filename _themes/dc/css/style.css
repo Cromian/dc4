@@ -293,6 +293,22 @@ header .container {
   height: 30rem;
   margin: auto;
 }
+.doodle-me:hover:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "";
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  margin: auto;
+  top: 18.5rem;
+  background-color: black;
+}
 @media screen and (max-width: 700px) {
   .doodle-me {
     height: 40vh;
@@ -543,7 +559,7 @@ footer .social-links a {
   font-size: large;
   font-weight: bold;
   cursor: pointer;
-  margin-top: -2rem;
+  margin-top: -2.5rem;
   float: right;
   position: relative;
   top: -1.2rem;
@@ -754,7 +770,7 @@ footer .social-links a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  width: 90%;
+  width: 85%;
   height: 38rem;
   margin: auto;
 }
@@ -796,7 +812,7 @@ footer .social-links a {
 }
 #clients p {
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 #clients .doodle-scribble {
   margin-top: 3rem;
